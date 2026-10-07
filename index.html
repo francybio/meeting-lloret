@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meeting · Ristorante Pizzeria Spaghetteria en Lloret de Mar</title>
+<meta name="description" content="Meeting, restaurante italiano familiar en Fenals (Lloret de Mar) desde 1990: pizzas de la casa, pasta, la lasagna de Emilio y tiramisú. Martes a domingo, 13–17 h y 19–23 h. Reservas: 872 21 18 87.">
+<meta name="theme-color" content="#C8342A">
+<meta property="og:title" content="Meeting · Cucina italiana dal 1990">
+<meta property="og:description" content="Pizza, pasta y cocina italiana de familia en Lloret de Mar.">
+<meta property="og:image" content="assets/img/pizza-speck.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23C8342A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' fill='%23F2E8D5' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..900,0..100;1,9..144,300..900,0..100&family=Archivo:wdth,wght@62..125,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/light/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ INTRO · la caja de pizza se abre ============ -->
+<div class="box" id="box" aria-hidden="true">
+  <div class="box__inside"><span>Buon appetito</span></div>
+  <div class="box__lid">
+    <div class="box__stamp">
+      <p class="box__top">Ristorante · Pizzeria · Spaghetteria</p>
+      <p class="box__name">Meeting</p>
+      <p class="box__since">dal <b id="year">1990</b></p>
+      <p class="box__hint">Lloret de Mar · Fenals</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a class="brand" href="#top" aria-label="Meeting, inicio"><span class="brand__m">Meeting</span><small>dal 1990</small></a>
+  <nav class="nav__links" id="navLinks" aria-label="Principal">
+    <a href="#ruota">La ruota</a>
+    <a href="#carta">Carta</a>
+    <a href="#tavolo">Il tavolo</a>
+    <a href="#tv">Video</a>
+    <a href="#dove">Dónde</a>
+  </nav>
+  <div class="nav__end">
+    <span class="status" data-status><i></i><b>—</b></span>
+    <a class="btn btn--red btn--sm" href="tel:+34872211887"><i class="ph-light ph-phone-call"></i><span>Reservar</span></a>
+    <button class="nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menú"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO · cartel editorial ============ -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="ribbon">Ristorante · Pizzeria · Spaghetteria</p>
+      <h1 class="hero__title"><span class="hero__word">Meeting</span></h1>
+      <p class="hero__lead">Cocina italiana de familia desde 1990. La masa de Giorgio, la lasagna de Emilio y una sala donde todos acaban siendo habituales.</p>
+      <div class="hero__cta">
+        <a class="btn btn--red" href="tel:+34872211887"><i class="ph-light ph-phone-call"></i>Reservar · 872 21 18 87</a>
+        <a class="btn btn--ink" href="#ruota">Elige tu pizza <i class="ph-light ph-arrow-down-right"></i></a>
+      </div>
+      <p class="hero__note"><i class="ph-light ph-info"></i> Las reservas se hacen solo por teléfono.</p>
+    </div>
+
+    <div class="hero__wall" id="wall">
+      <figure class="pol pol--1" data-depth="18"><img src="assets/img/pizza-speck.jpg" alt="Pizza con mascarpone y speck" width="1600" height="1600"><figcaption>Mascarpone e speck</figcaption></figure>
+      <figure class="pol pol--2" data-depth="30"><img src="assets/img/spaghetti-calamari.jpg" alt="Espaguetis con calamares y gambas" width="1600" height="1600"><figcaption>Spaghetti al mare</figcaption></figure>
+      <figure class="pol pol--3" data-depth="12"><img src="assets/img/porchetta.jpg" alt="Porchetta cortada en lonchas finas" width="1600" height="1600"><figcaption>La nostra porchetta</figcaption></figure>
+      <figure class="pol pol--4" data-depth="24"><img src="assets/img/terrina.jpg" alt="Terrina del chef con pan tostado" width="1280" height="1600"><figcaption>Terrina dello chef</figcaption></figure>
+      <div class="seal" data-depth="40">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sealc" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><text><textPath href="#sealc">TRAVELLERS' CHOICE · TRIPADVISOR 2021 · </textPath></text></svg>
+        <span><b>4,6★</b><small>Google<br>1.299 reseñas</small></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>Margherita</span><span>Capricciosa</span><span>Parigina</span><span>Red Devil</span><span>Maialona</span><span>Pizza di Giorgio</span><span>Frutti di mare</span><span>Calzone</span>
+      <span>Margherita</span><span>Capricciosa</span><span>Parigina</span><span>Red Devil</span><span>Maialona</span><span>Pizza di Giorgio</span><span>Frutti di mare</span><span>Calzone</span>
+    </div>
+  </div>
+
+  <!-- ============ LA RUOTA DELLE PIZZE ============ -->
+  <section class="ruota" id="ruota" aria-labelledby="ruotaT">
+    <div class="ruota__head">
+      <p class="kicker">N.º 1 · La ruota delle pizze</p>
+      <h2 class="h2" id="ruotaT">Gira la rueda.<br><em>Elige tu pizza.</em></h2>
+      <p class="lead">Arrastra la rueda (o usa las flechas) y mira cómo se monta cada pizza de la carta, con sus ingredientes de verdad. Mediana o familiar, tú decides.</p>
+    </div>
+
+    <div class="ruota__stage">
+      <div class="dial" id="dial">
+        <div class="dial__ring" id="dialRing" aria-hidden="true"></div>
+        <div class="dial__pointer" aria-hidden="true"></div>
+        <div class="pizza" id="pizza">
+          <svg viewBox="-110 -110 220 220" id="pizzaSvg" role="img" aria-label="Pizza seleccionada">
+            <defs>
+              <radialGradient id="crust" cx="50%" cy="45%" r="55%"><stop offset=".78" stop-color="#E9B871"/><stop offset=".93" stop-color="#C98A4B"/><stop offset="1" stop-color="#9C5F2C"/></radialGradient>
+              <radialGradient id="sauce" cx="45%" cy="40%" r="60%"><stop offset="0" stop-color="#D9452F"/><stop offset="1" stop-color="#A9271B"/></radialGradient>
+              <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="4"/></filter>
+            </defs>
+            <g id="base"></g>
+            <g id="tops"></g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="pick" aria-live="polite">
+        <label class="sr" for="pizzaSel">Elegir pizza</label>
+        <div class="pick__nav">
+          <button class="round" type="button" data-step="-1" aria-label="Pizza anterior"><i class="ph-light ph-arrow-left"></i></button>
+          <select id="pizzaSel"></select>
+          <button class="round" type="button" data-step="1" aria-label="Pizza siguiente"><i class="ph-light ph-arrow-right"></i></button>
+        </div>
+        <p class="pick__n" id="pickN">01 / 24</p>
+        <h3 class="pick__name" id="pickName">Margherita</h3>
+        <p class="pick__ing" id="pickIng">Salsa de tomate y mozzarella</p>
+        <div class="size" role="radiogroup" aria-label="Tamaño">
+          <button type="button" role="radio" aria-checked="true" data-size="m">Mediana</button>
+          <button type="button" role="radio" aria-checked="false" data-size="f">Familiar</button>
+        </div>
+        <p class="pick__price"><span id="pickPrice">8,00</span> €</p>
+        <p class="pick__foot">La masa la hace Giorgio, como siempre. Pizza cortada +1 €. Los extras se pagan aparte.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA ============ -->
+  <section class="carta" id="carta" aria-labelledby="cartaT">
+    <div class="carta__head">
+      <p class="kicker">N.º 2 · La carta</p>
+      <h2 class="h2" id="cartaT">Todo lo que sale<br><em>de nuestra cocina.</em></h2>
+    </div>
+
+    <div class="sheet">
+      <div class="sheet__col sheet__col--pizza">
+        <h3 class="sheet__h">Le pizze <small>mediana · familiar</small></h3>
+        <ul class="plist" id="plist"></ul>
+      </div>
+      <div class="sheet__col">
+        <h3 class="sheet__h">Spaghetteria &amp; cucina</h3>
+        <p class="sheet__intro">Pasta al dente, recetas de casa y los platos de Emilio. Cambian según el día: pregunta en sala por los precios y las sugerencias.</p>
+        <ul class="dlist">
+          <li><b>Spaghetti alla carbonara</b><span>La más pedida. “Como estar en Italia”, dicen en las reseñas.</span></li>
+          <li><b>Lasagna di Emilio</b><span>Al horno, en cazuela de barro.</span></li>
+          <li><b>Ragù tradizionale</b><span>Salsa de carne a fuego lento.</span></li>
+          <li><b>Pasta con mariscos y setas</b><span>Mar y bosque en el mismo plato.</span></li>
+          <li><b>Spaghetti con calamari</b><span>Con gambas, ajo y perejil.</span></li>
+          <li><b>Gnocchi</b><span>Ñoquis de la casa.</span></li>
+          <li><b>Polenta con funghi porcini</b><span>Polenta dorada con boletus.</span></li>
+          <li><b>Terrina dello chef</b><span>Gratinada y con pan tostado para mojar.</span></li>
+          <li><b>La porchetta</b><span>Cortada fina, como en Toscana.</span></li>
+        </ul>
+        <h3 class="sheet__h sheet__h--small">I dolci</h3>
+        <ul class="dlist dlist--inline">
+          <li><b>Tiramisú</b></li><li><b>Panna cotta</b></li><li><b>Crepes de Nutella</b></li><li><b>Focaccia con Nutella</b> · 15 €</li>
+        </ul>
+      </div>
+      <div class="sheet__col sheet__col--drinks">
+        <h3 class="sheet__h">Aperitivi</h3>
+        <ul class="plist plist--single">
+          <li><span>Spritz</span><i></i><b>8,00</b></li>
+          <li><span>Americano</span><i></i><b>8,00</b></li>
+          <li><span>Negroni</span><i></i><b>8,00</b></li>
+          <li><span>Vermouth</span><i></i><b>5,00</b></li>
+          <li><span>Martini</span><i></i><b>5,00</b></li>
+        </ul>
+        <h3 class="sheet__h">Bebidas</h3>
+        <ul class="plist plist--single">
+          <li><span>Agua ½ L</span><i></i><b>2,00</b></li>
+          <li><span>Refrescos en lata</span><i></i><b>2,50</b></li>
+          <li><span>Zumos</span><i></i><b>2,50</b></li>
+          <li><span>Moretti 33 cl</span><i></i><b>3,50</b></li>
+          <li><span>Coronita 35 cl</span><i></i><b>3,50</b></li>
+          <li><span>Amstel 33 cl</span><i></i><b>3,00</b></li>
+          <li><span>Amstel 00 · Oro</span><i></i><b>3,50</b></li>
+          <li><span>Radler 33 cl</span><i></i><b>3,00</b></li>
+          <li><span>Caña Cruzcampo 30 · 50 cl</span><i></i><b>3,00 · 4,50</b></li>
+        </ul>
+        <p class="sheet__note">IVA incluido · Sangría y vino de la casa en sala.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ IL TAVOLO · baraja de fotos ============ -->
+  <section class="tavolo" id="tavolo" aria-labelledby="tavT">
+    <div class="tavolo__copy">
+      <p class="kicker">N.º 3 · Il tavolo</p>
+      <h2 class="h2" id="tavT">Lo que llega<br><em>a la mesa.</em></h2>
+      <p class="lead">Fotos de nuestro Instagram. Desliza la de arriba hacia un lado para ver la siguiente.</p>
+      <div class="deck__ctrl">
+        <button class="round round--light" type="button" id="deckPrev" aria-label="Foto anterior"><i class="ph-light ph-arrow-u-up-left"></i></button>
+        <p class="deck__cap" id="deckCap" aria-live="polite"></p>
+        <button class="round round--light" type="button" id="deckNext" aria-label="Foto siguiente"><i class="ph-light ph-arrow-right"></i></button>
+      </div>
+      <a class="insta" href="https://www.instagram.com/ilmeeting/" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo"></i>@ilmeeting</a>
+    </div>
+    <div class="deck" id="deck" aria-label="Baraja de fotos"></div>
+  </section>
+
+  <!-- ============ LA TV DI MEETING ============ -->
+  <section class="tv-sec" id="tv" aria-labelledby="tvT">
+    <div class="tv-sec__copy">
+      <p class="kicker">N.º 4 · La tele de Meeting</p>
+      <h2 class="h2" id="tvT">Cambia de canal.</h2>
+      <p class="lead">Dos vídeos de nuestro Instagram: el “grazie” a quienes nos acompañan cada temporada y la lasagna de Emilio saliendo del horno.</p>
+    </div>
+    <div class="tv">
+      <div class="tv__body">
+        <div class="tv__screen">
+          <video id="tvVideo" data-auto data-src="assets/video/grazie.mp4" poster="assets/img/poster-grazie.jpg" muted loop playsinline preload="none"></video>
+          <canvas class="tv__noise" id="noise" width="160" height="120" aria-hidden="true"></canvas>
+          <p class="tv__osd" id="osd">CH 1 · Grazie</p>
+        </div>
+        <div class="tv__panel">
+          <button class="knob" id="knob" type="button" aria-label="Cambiar de canal"><span></span></button>
+          <button class="tv__btn" id="tvSound" type="button" aria-label="Activar sonido"><i class="ph-light ph-speaker-slash"></i></button>
+          <div class="tv__grill" aria-hidden="true"></div>
+          <p class="tv__brand">Meeting<br><small>TV · 1990</small></p>
+        </div>
+      </div>
+      <div class="tv__legs" aria-hidden="true"><i></i><i></i></div>
+    </div>
+  </section>
+
+  <!-- ============ LA FAMIGLIA ============ -->
+  <section class="famiglia" aria-labelledby="famT">
+    <p class="kicker">N.º 5 · La famiglia</p>
+    <h2 class="h2" id="famT">Tres oficios,<br><em>una sola mesa.</em></h2>
+    <div class="fam">
+      <article class="fam__card">
+        <i class="ph-light ph-cooking-pot"></i>
+        <h3>Emilio</h3><p class="fam__role">In cucina</p>
+        <p>Su lasaña lleva su nombre y los clientes lo citan en las reseñas. Pasta, terrinas y platos de cuchara con acento italiano.</p>
+      </article>
+      <article class="fam__card">
+        <i class="ph-light ph-pizza"></i>
+        <h3>Giorgio</h3><p class="fam__role">Il pizzaiolo</p>
+        <p>“L’impasto fatto dal capo Giorgio non è mai cambiato.” La masa de siempre, cada día.</p>
+      </article>
+      <article class="fam__card">
+        <i class="ph-light ph-wine"></i>
+        <h3>La sala</h3><p class="fam__role">Accoglienza toscana</p>
+        <p>Un jefe de sala italiano, de la Toscana, que te recomienda como si fueras de casa.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS · el periódico ============ -->
+  <section class="press" aria-labelledby="pressT">
+    <div class="press__mast">
+      <span>Edición Fenals</span>
+      <h2 id="pressT">La Gazzetta di Meeting</h2>
+      <span>4,6 ★ · 1.299 reseñas en Google</span>
+    </div>
+    <div class="press__cols">
+      <article class="press__lead">
+        <h3>“La carbonara y el tiramisú, como estar en Italia”</h3>
+        <p>El ambiente y el servicio es increíble y la carbonara y el tiramisú como estar en Italia. Lo recomiendo por completo.</p>
+        <p class="press__by">— Reseña en Google</p>
+      </article>
+      <article>
+        <h4>Pasta espectacular</h4>
+        <p>El jefe de sala, un hombre italiano de la Toscana, fue muy amable y nos recomendó muy bien. La pasta está espectacular. 100 % que volveremos.</p>
+        <p class="press__by">— Reseña en Google</p>
+      </article>
+      <article>
+        <h4>Al dente y bien cuidada</h4>
+        <p>Pedimos un ragú tradicional y una pasta con mariscos y setas: pasta al dente y bien cuidada. El tiramisú, excepcional.</p>
+        <p class="press__by">— Reseña en Google</p>
+      </article>
+      <article>
+        <h4>De los mejores</h4>
+        <p>Comida espectacular y servicio de 10. Se nota la calidad de los ingredientes y el ambiente es muy acogedor. Uno de los mejores italianos que he probado.</p>
+        <p class="press__by">— Reseña en Google</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ DÓNDE ============ -->
+  <section class="dove" id="dove" aria-labelledby="doveT">
+    <div class="dove__info">
+      <p class="kicker">N.º 6 · Dónde estamos</p>
+      <h2 class="h2" id="doveT">Avinguda Amèrica, 20</h2>
+      <p class="dove__city">Barrio de Fenals · 17310 Lloret de Mar</p>
+      <p class="status status--big" data-status><i></i><b>—</b></p>
+      <table class="hours" id="hours"><caption class="sr">Horario</caption></table>
+      <div class="dove__cta">
+        <a class="btn btn--red" href="tel:+34872211887"><i class="ph-light ph-phone-call"></i>872 21 18 87</a>
+        <a class="btn btn--ink" href="https://www.google.com/maps/dir/?api=1&destination=Meeting%20Ristorante%20Pizzeria%20Spaghetteria%2C%20Avinguda%20Am%C3%A8rica%2020%2C%20Lloret%20de%20Mar" target="_blank" rel="noopener"><i class="ph-light ph-map-trifold"></i>Cómo llegar</a>
+        <a class="btn btn--line" href="https://www.instagram.com/ilmeeting/" target="_blank" rel="noopener"><i class="ph-light ph-instagram-logo"></i>Instagram</a>
+      </div>
+    </div>
+    <div class="dove__map">
+      <iframe title="Mapa: Meeting Ristorante Pizzeria Spaghetteria en Lloret de Mar" src="https://maps.google.com/maps?q=Meeting%20Ristorante%20Pizzeria%20Spaghetteria%2C%20Avinguda%20Am%C3%A8rica%2020%2C%20Lloret%20de%20Mar&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__big">Grazie<em>, a presto!</em></p>
+  <div class="foot__row">
+    <span>Meeting · Ristorante Pizzeria Spaghetteria · Cocina italiana desde 1990</span>
+    <span>Fotos y vídeos: Instagram @ilmeeting y Google</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
